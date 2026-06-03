@@ -27,5 +27,33 @@
   "stat_certs": "Certificates issued",
   "stat_models": "Models in our base",
   "stat_students": "Specialists trained",
-  "stat_clients": "Happy clients"
+  "stat_clients": "Happy clients",
+  "courses_for_medics": "Course for medics",
+  "badge_offline": "Offline",
+  "badge_online": "Online",
+  "badge_masterclass": "Master class",
+  "btn_register_course": "Register Now",
+  "btn_details": "Details",
+  "seats_available": "2 out of 15 seats available",
+  
+  "course1_title": "Cannula Techniques",
+  "course1_date": "May 1 - 4",
+  "course1_desc_line1": "Brief description",
+  "course1_desc_line2": "Something about the course",
+  "course1_desc_line3": "A few facts",
+  "course1_desc_line4": "Short info",
+
+  "course2_title": "Mesotherapy and Biorevitalization",
+  "course2_date": "May 15 - 20",
+  "course2_desc_line1": "Brief description",
+  "course2_desc_line2": "Something about the course",
+  "course2_desc_line3": "A few facts",
+  "course2_desc_line4": "Short info",
+
+  "course3_title": "Biogel - New in Cosmetology",
+  "course3_date": "August 2 - 5",
+  "course3_desc_line1": "Brief description",
+  "course3_desc_line2": "Something about the course",
+  "course3_desc_line3": "A few facts",
+  "course3_desc_line4": "Short info"
 }

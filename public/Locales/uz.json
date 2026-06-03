@@ -27,5 +27,33 @@
   "stat_certs": "Sertifikatlar topshirdik",
   "stat_models": "Bazamizdagi modellar",
   "stat_students": "Mutaxassislarni oʻqitdik",
-  "stat_clients": "Mamnun mijozlar"
+  "stat_clients": "Mamnun mijozlar",
+  "courses_for_medics": "Shifokorlar uchun kurs",
+  "badge_offline": "Offlayn",
+  "badge_online": "Onlayn",
+  "badge_masterclass": "Master-klass",
+  "btn_register_course": "Roʻyxatdan oʻtish",
+  "btn_details": "Batafsil",
+  "seats_available": "15 ta joydan 2 tasi boʻsh",
+  
+  "course1_title": "Kanyula texnikalari",
+  "course1_date": "1 - 4 may",
+  "course1_desc_line1": "Qisqacha tavsif",
+  "course1_desc_line2": "Kurs haqida nimadir",
+  "course1_desc_line3": "Bir nechta faktlar",
+  "course1_desc_line4": "Qisqa ma'lumot",
+
+  "course2_title": "Mezoterapya va biorevitalizatsiya",
+  "course2_date": "15 - 20 may",
+  "course2_desc_line1": "Qisqacha tavsif",
+  "course2_desc_line2": "Kurs haqida nimadir",
+  "course2_desc_line3": "Bir nechta faktlar",
+  "course2_desc_line4": "Qisqa ma'lumot",
+
+  "course3_title": "Biogel - kosmetologiyada yangilik",
+  "course3_date": "2 - 5 avgust",
+  "course3_desc_line1": "Qisqacha tavsif",
+  "course3_desc_line2": "Kurs haqida nimadir",
+  "course3_desc_line3": "Bir nechta faktlar",
+  "course3_desc_line4": "Qisqa ma'lumot"
 }

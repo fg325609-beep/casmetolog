@@ -27,5 +27,34 @@
   "stat_certs": "Сертификатов мы выдали",
   "stat_models": "Моделей в нашей базе",
   "stat_students": "Специалистов мы обучили",
-  "stat_clients": "Довольных клиентов"
+  "stat_clients": "Довольных клиентов",
+  "courses_for_medics": "Курс для медиков",
+  "badge_offline": "Оффлайн",
+  "badge_online": "Онлайн",
+  "badge_masterclass": "Мастер-класс",
+  "btn_register_course": "Зарегистрироваться",
+  "btn_details": "Подробнее",
+  "seats_available": "Свободно 2 из 15 мест",
+  
+  "course1_title": "Канюльные техники",
+  "course1_date": "1 - 4 мая",
+  "course1_desc_line1": "Краткое описание",
+  "course1_desc_line2": "Что-то о курсе",
+  "course1_desc_line3": "Пару фактов",
+  "course1_desc_line4": "Краткое описание",
+
+  "course2_title": "Мезотерапия и биоревитализация",
+  "course2_date": "15 - 20 мая",
+  "course2_desc_line1": "Краткое описание",
+  "course2_desc_line2": "Что-то о курсе",
+  "course2_desc_line3": "Пару фактов",
+  "course2_desc_line4": "Краткое описание",
+
+  "course3_title": "Биогель - новое в косметологии",
+  "course3_date": "2 - 5 августа",
+  "course3_desc_line1": "Краткое описание",
+  "course3_desc_line2": "Что-то о курсе",
+  "course3_desc_line3": "Пару фактов",
+  "course3_desc_line4": "Краткое описание"
+  
 }
