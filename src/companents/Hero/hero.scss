@@ -1,13 +1,14 @@
-$bg-light-green: #eef9ed; // Rasmdagi och yashil fon rang
-$primary-green: #4ca634;  // Tugma va sarlavhaning to'q yashil rangi
+$bg-light-green: #eef9ed; 
+$primary-green: #4ca634;  
 $text-dark: #2d3748;
-$text-muted: #4a5568;
+$text-muted: #718096;
 
 .hero-section {
   background-color: $bg-light-green;
   width: 100%;
-  overflow: hidden;
-  padding: 60px 0 0 0; // Rasm pastki qismga taqalib turishi uchun pastdan padding 0
+  position: relative;
+  padding: 60px 0 120px 0; // Pastki qismdan joy ochamiz (padding-bottom ko'paytirildi)
+  margin-bottom: 120px;    // Statistika bloki sig'ishi uchun tashqi masofa qo'shildi
 }
 
 .hero-container {
@@ -15,102 +16,89 @@ $text-muted: #4a5568;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-// Chap tomondagi matnlar qismi
 .hero-left {
   flex: 1;
   max-width: 550px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding-bottom: 60px; // Matnlar pastga yopishib qolmasligi uchun
+  gap: 25px;
 
   .hero-subtitle {
     font-size: 16px;
     font-weight: 600;
-    color: #1a4f80; // Rasmdagi ko'k rangli chiziqli matn uchun
+    color: #1a4f80;
     text-decoration: underline;
-    display: inline-block;
   }
 
   .hero-title {
-    font-size: 52px;
+    font-size: 56px; // Biroz kattalashtirildi
     font-weight: 800;
     color: $primary-green;
     line-height: 1.1;
     margin: 0;
-    letter-spacing: -0.5px;
   }
 
   .hero-description {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.6;
     color: $text-muted;
-    margin: 0;
+    max-width: 480px;
   }
 
-  // Tugmalar joylashuvi
   .hero-buttons {
     display: flex;
     gap: 16px;
-    margin-top: 15px;
 
     .btn {
-      padding: 14px 28px;
+      padding: 14px 32px;
       font-size: 15px;
       font-weight: 600;
       border-radius: 4px;
       cursor: pointer;
       transition: all 0.2s ease-in-out;
-      outline: none;
 
       &-primary {
         background-color: $primary-green;
         color: #ffffff;
         border: none;
-
-        &:hover {
-          background-color: darken($primary-green, 8%);
-        }
+        &:hover { background-color: darken($primary-green, 8%); }
       }
 
       &-secondary {
         background-color: transparent;
         color: $primary-green;
         border: 1px solid $primary-green;
-
-        &:hover {
-          background-color: rgba($primary-green, 0.05);
-        }
+        &:hover { background-color: rgba($primary-green, 0.05); }
       }
     }
   }
 }
 
-// O'ng tomondagi rasm qismi
 .hero-right {
   flex: 1;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  align-self: flex-end; // Rasmdagi odamlar eng pastki chiziqqa taqaladi
-
+  
   .hero-image-wrapper {
     position: relative;
     display: flex;
     align-items: flex-end;
 
-    // Rasmdagi shifokorlar ortidagi ko'k ramka effekti (border)
+    // Moviy burchak ramka effekti
     &::before {
       content: '';
       position: absolute;
-      top: -40px;
-      left: -20px;
-      right: 0;
-      bottom: 0;
-      border-left: 2px solid #3182ce;
-      border-top: 2px solid #3182ce;
+      top: -30px;
+      left: -30px;
+      width: 150px;
+      height: 150px;
+     
       pointer-events: none;
       z-index: 1;
     }
@@ -118,42 +106,113 @@ $text-muted: #4a5568;
     .hero-img {
       max-width: 100%;
       height: auto;
+      max-height: 450px; // Rasm juda katta bo'lib ketmasligi uchun
       display: block;
       position: relative;
-      z-index: 2; // Ko'k ramkaning ustida turishi uchun
+      z-index: 2;
     }
   }
 }
 
-// Mobil va Planshet ekranlar uchun moslashuvchanlik (Responsive)
+// Statistika blokining (hero-bottom) mutlaq joylashuvi to'g'rilandi
+.hero-bottom {
+  position: absolute;
+  bottom: -70px; // Yashil fondan yarmi pastga chiqib turishi uchun
+  left: 50%;
+  transform: translateX(-50%); // O'rtaga tekislash
+  width: calc(100% - 30px);
+  max-width: 1170px;
+  background-color: #ffffff;
+  border: 3px solid #805ad5; 
+  border-radius: 4px;
+  padding: 35px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+
+  .stat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    
+    &:not(:last-child) {
+      border-right: 1px solid #edf2f7;
+    }
+
+    .stat-number {
+      font-size: 46px;
+      font-weight: 800;
+      color: $primary-green;
+      display: flex;
+      align-items: center;
+      line-height: 1;
+
+      .plus {
+        margin-left: 2px;
+      }
+    }
+
+    .stat-text {
+      font-size: 15px;
+      color: #4a5568;
+      margin-top: 12px;
+      margin-bottom: 0;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+  }
+}
+
+// Responsive - Mobil ekranlar moslashuvchanligi
 @media (max-width: 992px) {
+  .hero-section {
+    margin-bottom: 0;
+    padding-bottom: 40px;
+  }
+
   .hero-container {
     flex-direction: column;
     text-align: center;
-    gap: 30px;
-    padding-top: 40px;
   }
 
   .hero-left {
     max-width: 100%;
     align-items: center;
-    padding-bottom: 20px;
 
-    .hero-title {
-      font-size: 38px;
-    }
-
-    .hero-buttons {
-      justify-content: center;
-    }
+    .hero-title { font-size: 38px; }
+    .hero-buttons { justify-content: center; }
   }
 
   .hero-right {
     justify-content: center;
     width: 100%;
+    margin-top: 20px;
     
     .hero-image-wrapper::before {
-      display: none; // Mobil ekranda ramkani olib tashlaymiz, chiroyli chiqishi uchun
+      display: none; 
     }
+  }
+
+  .hero-bottom {
+    position: static; 
+    transform: none;
+    margin: 40px auto 0 auto;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px;
+
+    .stat-card {
+      border-right: none !important;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-bottom {
+    grid-template-columns: 1fr; 
+    gap: 25px;
   }
 }

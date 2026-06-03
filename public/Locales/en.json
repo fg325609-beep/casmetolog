@@ -23,5 +23,9 @@
   "hero_title": "COSMETOLOGIST PROFESSION",
   "hero_desc": "We invite you to a free webinar for professional cosmetologists and those interested in this profession",
   "btn_reg": "Register Now",
-  "btn_more": "Learn More"
+  "btn_more": "Learn More",
+  "stat_certs": "Certificates issued",
+  "stat_models": "Models in our base",
+  "stat_students": "Specialists trained",
+  "stat_clients": "Happy clients"
 }
