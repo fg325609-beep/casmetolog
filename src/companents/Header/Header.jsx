@@ -5,20 +5,19 @@ import "./Header.scss";
 const Header = () => {
   const { t, i18n } = useTranslation();
 
-  // Til o'zgarganda i18next-ni majburiy yangilovchi funksiya
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
 
   return (
     <header className="site-header">
-      {/* Yuqori qism: Logo, Telefon, Tarmoqlar, Til */}
+      {/* Top Header */}
       <div className="header-top">
         <div className="container header-top__wrapper">
           
           <div className="logo-area">
             <div className="logo-circle">ValMari</div>
-            <span className="logo-tagline">{t('tagline')}</span>
+            <span className="logo-tagline">{t('tagline', 'Estetik kosmetologiya oʻquv markazi')}</span>
           </div>
 
           <div className="header-actions">
@@ -31,7 +30,7 @@ const Header = () => {
               <a href="#" className="social-link ig">IG</a>
             </div>
 
-            {/* Tilni tanlash qismi */}
+            {/* Tilni almashtirish Select elementi */}
             <div className="lang-switcher">
               <select 
                 value={i18n.language || 'uz'} 
@@ -48,7 +47,7 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Pastki qism: Navigatsiya menyusi */}
+      {/* Main Navigation */}
       <nav className="header-nav">
         <div className="container">
           <ul className="nav-list">
