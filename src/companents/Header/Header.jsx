@@ -37,9 +37,9 @@ const Header = () => {
                 onChange={(e) => changeLanguage(e.target.value)}
                 className="lang-select"
               >
-                <option value="uz">🇺🇿 UZ</option>
-                <option value="ru">🇷🇺 RU</option>
-                <option value="en">🇬🇧 EN</option>
+                <option value="uz">UZ</option>
+                <option value="ru">RU</option>
+                <option value="en">EN</option>
               </select>
             </div>
           </div>
