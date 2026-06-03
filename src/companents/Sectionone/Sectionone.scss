@@ -1,0 +1,244 @@
+// Ranglar palitrasi
+$purple-color: #5856d6;
+$green-color: #4ca634;
+$cyan-color: #00a3a6;
+$text-dark: #2d3748;
+$text-light: #718096;
+
+.sectionone {
+  padding: 60px 0;
+  background-color: #ffffff;
+
+  .title {
+    margin-bottom: 40px;
+    h1 {
+      font-size: 32px;
+      color: $text-dark;
+      font-weight: 700;
+    }
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  // Umumiy Karta stili
+  .card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    padding: 30px 24px;
+    display: flex;
+    flex-direction: column;
+    border:  solid solid #edf2f7;
+    position: relative;
+    overflow: hidden;
+
+    // Har bir karta turi uchun unikal tepa qism va tugma ranglari
+    &.purple {
+      .card-top h3 { color: $purple-color; }
+      .badge { background: $purple-color; }
+      .desc-list li::before { background: $purple-color; }
+      .btn-reg { background: $purple-color; }
+      .btn-more { color: $purple-color; background: rgba($purple-color, 0.08); }
+    }
+
+    &.green {
+      .card-top h3 { color: $green-color; }
+      .badge { background: $green-color; }
+      .desc-list li::before { background: $green-color; }
+      .btn-reg { background: $green-color; }
+      .btn-more { color: $green-color; background: rgba($green-color, 0.08); }
+    }
+
+    &.cyan {
+      .card-top h3 { color: $cyan-color; }
+      .badge { background: $cyan-color; }
+      .desc-list li::before { background: $cyan-color; }
+      .btn-reg { background: $cyan-color; }
+      .btn-more { color: $cyan-color; background: rgba($cyan-color, 0.08); }
+    }
+
+    // Kartaning ichki qismlari
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+
+      h3 {
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0;
+      }
+      .bird-icon {
+        width: 24px;
+        height: auto;
+      }
+    }
+
+    .card-middle {
+      margin-bottom: 25px;
+      
+      .course-title {
+        font-size: 24px;
+        color: $text-dark;
+        font-weight: 700;
+        margin: 0 0 15px 0;
+        min-height: 58px; // Sarlavhalar bir xil chiziqda turishi uchun
+        line-height: 1.2;
+      }
+
+      .badge-date-row {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .badge {
+          color: #ffffff;
+          font-size: 13px;
+          font-weight: 600;
+          padding: 6px 16px;
+          border-radius: 20px;
+        }
+
+        .date {
+          font-size: 15px;
+          color: $text-dark;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .card-body {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 25px;
+      flex: 1; // Elementlarni bir xil balandlikda ushlash uchun
+
+      .desc-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        li {
+          font-size: 14px;
+          color: $text-light;
+          position: relative;
+          padding-left: 15px;
+          line-height: 1.4;
+
+          // Chap tomondagi rangli vertikal chiziqcha
+          &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 4px;
+            width: 2px;
+            height: 12px;
+            border-radius: 2px;
+          }
+        }
+      }
+
+      .image-box {
+        width: 100px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          max-width: 100%;
+          height: auto;
+          object-fit: contain;
+        }
+      }
+    }
+
+    .seats-info {
+      font-size: 14px;
+      color: $text-light;
+      margin: 0 0 15px 0;
+      font-weight: 500;
+    }
+
+    // Tugmalar bloki
+    .card-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      button {
+        width: 100%;
+        padding: 14px;
+        font-size: 15px;
+        font-weight: 600;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        text-align: center;
+      }
+
+      .btn-reg {
+        color: #ffffff;
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+
+      .btn-more {
+        border: none;
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.05) !important;
+        }
+      }
+    }
+  }
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 30px 0;
+    .bloom{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: rgba(183, 236, 177, 1);
+        border:1px solid rgba(183, 236, 177, 1) ;
+        list-style: none;
+        text-decoration: none;
+        &:hover{
+            background: rgba(85, 166, 48, 1);
+            border:1px solid rgba(85, 166, 48, 1);
+
+        }
+    }
+}
+
+// Planshet va Mobil qurilmalarga moslashuvchanlik (Responsive)
+@media (max-width: 1024px) {
+  .sectionone .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionone .cards {
+    grid-template-columns: 1fr;
+  }
+  .sectionone .title h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+}

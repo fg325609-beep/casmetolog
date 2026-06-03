@@ -1,7 +1,13 @@
 $primary-color: #b2e7b2; 
 $text-dark: #2d3748;
 $border-color: #edf2f7;
-
+header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99999;
+}
 .container {
   width: 100%;
   max-width: 1200px;
