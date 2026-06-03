@@ -1,0 +1,119 @@
+$primary-color: #b2e7b2; // Rasmdagi och yashil rang
+$text-dark: #333;
+$border-color: #e2e8f0;
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.site-header {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid $border-color;
+
+  .header-top {
+    padding: 12px 0;
+    border-bottom: 1px solid lighten($primary-color, 10%);
+
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      .logo-circle {
+        background-color: $primary-color;
+        color: #fff;
+        font-weight: bold;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .logo-tagline {
+        font-size: 12px;
+        color: #718096;
+        max-width: 160px;
+        line-height: 1.2;
+      }
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+
+      .phone-number {
+        font-size: 20px;
+        font-weight: 500;
+        color: $text-dark;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 10px;
+
+        .social-link {
+          text-decoration: none;
+          color: #fff;
+          background-color: darken($primary-color, 15%);
+          padding: 4px 8px;
+          border-radius: 4px;
+          font-size: 11px;
+          font-weight: bold;
+        }
+      }
+
+      .lang-switcher {
+        .lang-select {
+          padding: 4px 8px;
+          border: 1px solid $border-color;
+          border-radius: 4px;
+          background: #fff;
+          cursor: pointer;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .header-nav {
+    padding: 12px 0;
+
+    .nav-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+
+      li a {
+        text-decoration: none;
+        color: $text-dark;
+        font-size: 14px;
+        font-weight: 400;
+        transition: color 0.2s;
+
+        &:hover {
+          color: darken($primary-color, 20%);
+        }
+      }
+    }
+  }
+}
