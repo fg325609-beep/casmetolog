@@ -1,0 +1,159 @@
+$bg-light-green: #eef9ed; // Rasmdagi och yashil fon rang
+$primary-green: #4ca634;  // Tugma va sarlavhaning to'q yashil rangi
+$text-dark: #2d3748;
+$text-muted: #4a5568;
+
+.hero-section {
+  background-color: $bg-light-green;
+  width: 100%;
+  overflow: hidden;
+  padding: 60px 0 0 0; // Rasm pastki qismga taqalib turishi uchun pastdan padding 0
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+// Chap tomondagi matnlar qismi
+.hero-left {
+  flex: 1;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 60px; // Matnlar pastga yopishib qolmasligi uchun
+
+  .hero-subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a4f80; // Rasmdagi ko'k rangli chiziqli matn uchun
+    text-decoration: underline;
+    display: inline-block;
+  }
+
+  .hero-title {
+    font-size: 52px;
+    font-weight: 800;
+    color: $primary-green;
+    line-height: 1.1;
+    margin: 0;
+    letter-spacing: -0.5px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: $text-muted;
+    margin: 0;
+  }
+
+  // Tugmalar joylashuvi
+  .hero-buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 15px;
+
+    .btn {
+      padding: 14px 28px;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      outline: none;
+
+      &-primary {
+        background-color: $primary-green;
+        color: #ffffff;
+        border: none;
+
+        &:hover {
+          background-color: darken($primary-green, 8%);
+        }
+      }
+
+      &-secondary {
+        background-color: transparent;
+        color: $primary-green;
+        border: 1px solid $primary-green;
+
+        &:hover {
+          background-color: rgba($primary-green, 0.05);
+        }
+      }
+    }
+  }
+}
+
+// O'ng tomondagi rasm qismi
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-self: flex-end; // Rasmdagi odamlar eng pastki chiziqqa taqaladi
+
+  .hero-image-wrapper {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+
+    // Rasmdagi shifokorlar ortidagi ko'k ramka effekti (border)
+    &::before {
+      content: '';
+      position: absolute;
+      top: -40px;
+      left: -20px;
+      right: 0;
+      bottom: 0;
+      border-left: 2px solid #3182ce;
+      border-top: 2px solid #3182ce;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .hero-img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      position: relative;
+      z-index: 2; // Ko'k ramkaning ustida turishi uchun
+    }
+  }
+}
+
+// Mobil va Planshet ekranlar uchun moslashuvchanlik (Responsive)
+@media (max-width: 992px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding-top: 40px;
+  }
+
+  .hero-left {
+    max-width: 100%;
+    align-items: center;
+    padding-bottom: 20px;
+
+    .hero-title {
+      font-size: 38px;
+    }
+
+    .hero-buttons {
+      justify-content: center;
+    }
+  }
+
+  .hero-right {
+    justify-content: center;
+    width: 100%;
+    
+    .hero-image-wrapper::before {
+      display: none; // Mobil ekranda ramkani olib tashlaymiz, chiroyli chiqishi uchun
+    }
+  }
+}
