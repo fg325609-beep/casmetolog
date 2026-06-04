@@ -55,5 +55,31 @@
   "course3_desc_line1": "Qisqacha tavsif",
   "course3_desc_line2": "Kurs haqida nimadir",
   "course3_desc_line3": "Bir nechta faktlar",
-  "course3_desc_line4": "Qisqa ma'lumot"
+  "course3_desc_line4": "Qisqa ma'lumot",
+  "courses": "O'quv kurslari",
+  "webinars": "Webinarolar",
+  "video_lessons": "Video darslar",
+  "blog": "Blog",
+  "about_us": "Biz haqimizda",
+  "price": "Narxlar (Prays)",
+  "schedule": "Dars jadvali",
+  "promotions": "Aksiyalar",
+  "shop": "Do'kon",
+  "tagline": "Estetik kosmetologiya o'quv markazi",
+
+  "hero_sub": "Bepul vebinar",
+  "hero_title": "KOSMETOLOG KASBI",
+  "hero_desc": "Professional kosmetologlar va ushbu kasbga qiziquvchilar uchun bepul vebinarga taklif etamiz",
+  "btn_reg": "Roʻyxatdan oʻtish",
+  "btn_more": "Batafsil bilish",
+
+  "stat_certs": "Sertifikatlar topshirdik",
+  "stat_models": "Bazadagi modellarimiz",
+  "stat_students": "Mutaxassislar o'qitdik",
+  "stat_clients": "Mamnun mijozlar",
+
+  "about_title": "VALMARI ESTETIK KOSMETOLOGIYA YETAKCHI O'QUV MARKAZI",
+  "about_desc_1": "Tavsif istalgancha bo'lishi mumkin.",
+  "about_desc_2": "Estetik kosmetologiya bo'yicha yetakchi o'quv markazi.",
+  "about_desc_3": "5 yildan ortiq vaqt davomida biz kosmetologiya, go'zallik, salomatlik va yoshlik industriyasi sohasida sertifikatlangan professional ta'lim kurslarini o'tkazib kelmoqdamiz."
 }

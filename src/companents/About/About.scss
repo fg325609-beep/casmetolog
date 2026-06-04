@@ -1,0 +1,206 @@
+$primary-green: #4ca634;  
+$text-dark: #2d3748;
+$text-light: #4a5568;
+$text-muted: #718096;
+$border-blue: #3182ce;
+
+.about-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+  width: 100%;
+  overflow: hidden;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+// Chap tomon: Rasm bloki va ramka effekti
+.about-left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+
+  .image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+
+    // Rasmdagi ko'k burchakli ramka effekti
+    &::before {
+      content: '';
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      right: -20px;
+      bottom: -20px;
+      border: 2px solid $border-blue;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 500px;
+      object-fit: cover;
+      display: block;
+      position: relative;
+      z-index: 2;
+    }
+  }
+}
+
+// O'ng tomon: Matnlar va sarlavhalar
+.about-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .subtitle {
+    font-size: 15px;
+    font-weight: 500;
+    color: $text-muted;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+  }
+
+  .title {
+    font-size: 28px;
+    font-weight: 800;
+    color: $text-dark;
+    line-height: 1.3;
+    margin: 0 0 25px 0;
+    letter-spacing: -0.5px;
+
+    // "VALMARI" so'zini yashil qilish uchun (agar tarjimada birinchi so'z bo'lsa)
+    &::first-line {
+      color: $primary-green;
+    }
+  }
+
+  .description-box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 35px;
+
+    .desc-text {
+      font-size: 16px;
+      line-height: 1.6;
+      color: $text-light;
+      margin: 0;
+
+      &.text-muted {
+        color: $text-muted;
+      }
+
+      &.text-bold {
+        font-weight: 600;
+        color: $text-dark;
+      }
+    }
+  }
+
+  // Batafsil havolasi (yashil va o'ngga strelka bilan)
+  .btn-details-link {
+    font-size: 16px;
+    font-weight: 600;
+    color: $primary-green;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
+
+    &:hover {
+      border-bottom-color: $primary-green;
+      
+      .arrow {
+        transform: translateX(5px);
+      }
+    }
+
+    .arrow {
+      transition: transform 0.2s ease;
+      font-size: 18px;
+    }
+  }
+}
+
+// ==========================================
+// RESPONSIVE DESIGN (Ekran o'lchamlariga moslash)
+// ==========================================
+
+// Kichik noutbuklar va planshetlar uchun (max-width: 992px)
+@media (max-width: 992px) {
+  .about-section {
+    padding: 60px 0;
+  }
+
+  .about-container {
+    gap: 35px;
+  }
+
+  .about-right .title {
+    font-size: 24px;
+  }
+}
+
+// Katta telefonlar va kichik planshetlar uchun (max-width: 768px)
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; // Ustma-ust tushadi
+    gap: 45px;
+    text-align: left;
+  }
+
+  .about-left {
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px; // Ramka chetga yopishib qolmasligi uchun
+  }
+
+  .about-right {
+    width: 100%;
+  }
+}
+
+// Eng kichik smartfonlargacha (max-width: 480px)
+@media (max-width: 480px) {
+  .about-section {
+    padding: 40px 0;
+  }
+
+  .about-left {
+    .image-wrapper::before {
+      top: -12px;
+      left: -12px;
+      right: -12px;
+      bottom: -12px; // Ramka masofasini telefonda kichraytiramiz
+    }
+  }
+
+  .about-right {
+    .title {
+      font-size: 20px; // Telefon ekrani uchun shrift kichraytirildi
+      margin-bottom: 15px;
+    }
+
+    .desc-text {
+      font-size: 14px; // Telefonda o'qishga qulay o'lcham
+    }
+
+    .description-box {
+      margin-bottom: 25px;
+    }
+  }
+}

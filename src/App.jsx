@@ -2,6 +2,8 @@ import React from 'react';
 import Header from './companents/Header/Header';
 import Hero from './companents/Hero/Hero';
 import Sectionone from './companents/Sectionone/Sectionone';
+import About from './companents/About/About';
+
 
 
 
@@ -12,6 +14,7 @@ const App = () => {
   <Header/>
       <Hero/>
       <Sectionone/>
+      <About/>
     </div>
   );
 };

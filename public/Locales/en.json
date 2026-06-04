@@ -55,5 +55,31 @@
   "course3_desc_line1": "Brief description",
   "course3_desc_line2": "Something about the course",
   "course3_desc_line3": "A few facts",
-  "course3_desc_line4": "Short info"
+  "course3_desc_line4": "Short info",
+  "courses": "Training Courses",
+  "webinars": "Webinars",
+  "video_lessons": "Video Lessons",
+  "blog": "Blog",
+  "about_us": "About Us",
+  "price": "Price List",
+  "schedule": "Schedule",
+  "promotions": "Promotions",
+  "shop": "Shop",
+  "tagline": "Training Center of Aesthetic Cosmetology",
+
+  "hero_sub": "Free Webinar",
+  "hero_title": "COSMETOLOGIST PROFESSION",
+  "hero_desc": "We invite you to a free webinar for professional cosmetologists and those interested in this profession",
+  "btn_reg": "Register",
+  "btn_more": "Learn More",
+
+  "stat_certs": "Certificates Issued",
+  "stat_models": "Models in Our Base",
+  "stat_students": "Specialists Trained",
+  "stat_clients": "Satisfied Clients",
+
+  "about_title": "VALMARI LEADING TRAINING CENTER OF AESTHETIC COSMETOLOGY",
+  "about_desc_1": "Description can be anything.",
+  "about_desc_2": "Leading training center of aesthetic cosmetology.",
+  "about_desc_3": "For more than 5 years we have been conducting certified professional education courses in the field of cosmetology and the beauty, health, and youth industry."
 }
