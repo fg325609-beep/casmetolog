@@ -82,5 +82,11 @@
   "about_desc_1": "Description can be anything.",
   "about_desc_2": "Leading training center of aesthetic cosmetology.",
   "about_desc_3": "For more than 5 years we have been conducting certified professional education courses in the field of cosmetology and the beauty, health, and youth industry.",
-  "oddiy":"Cosmetologist training"
+  "oddiy":"Cosmetologist training",
+  "modelsSection": {
+    "title": "WE ARE RECRUITING MODELS",
+    "subTitle": "We offer our services for models.",
+    "description": "Choose a procedure or several procedures, and our manager will advise you and provide the closest date when you can receive this procedure.",
+    "buttonText": "Become a model"
+  }
 }

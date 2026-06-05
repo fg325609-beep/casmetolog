@@ -4,6 +4,8 @@ import Hero from './companents/Hero/Hero';
 import Sectionone from './companents/Sectionone/Sectionone';
 import About from './companents/About/About';
 import Sectiontheare from './companents/Sectiontheare/Sectiontheare';
+import Sectionfoo from './companents/Sectionfoo/Sectionfoo';
+
 
 
 
@@ -18,6 +20,7 @@ const App = () => {
       <Sectionone/>
       <About/>
       <Sectiontheare/>
+      <Sectionfoo/>
     </div>
   );
 };
