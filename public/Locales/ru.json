@@ -124,6 +124,15 @@
   },
   "offers": {
     "title": "Специальные предложения"
+  },
+  "callback": {
+    "title": "Закажите обратный звонок",
+    "subtitle": "Оставьте заявку в форме и наш менеджер свяжется с вами",
+    "namePlaceholder": "Ваше имя",
+    "phonePlaceholder": "Ваш номер телефона",
+    "send": "Отправить",
+    "success": "Xabar yuborildi!",
+    "error": "Xatolik yuz berdi."
   }
   
 }

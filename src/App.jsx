@@ -8,6 +8,8 @@ import Sectionfoo from './companents/Sectionfoo/Sectionfoo';
 import MasterClasses from './companents/MasterClasses/MasterClasses';
 import WhyUs from './companents/WhyUs/WhyUs';
 import Aksiya from './companents/Aksiya/Aksiya';
+import CallbackForm from './companents/CallbackForm/CallbackForm';
+
 
 
 
@@ -29,7 +31,8 @@ const App = () => {
       <Sectionfoo/>
       <MasterClasses/>
       <WhyUs/>
-      <Aksiya/> 
+      <Aksiya/>
+      <CallbackForm/> 
     </div>
   );
 };

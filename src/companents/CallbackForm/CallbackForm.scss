@@ -1,0 +1,101 @@
+.callback-section {
+  width: 100%;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9; // Orqa fon biroz ajralib turishi uchun
+
+  .callback-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 900px;
+    padding: 60px 40px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05); // Yumshoq soya
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+    .callback-title {
+      font-size: 32px;
+      font-weight: 700;
+      color: rgba(85, 166, 48, 1); // Brend yashil rangi
+      margin-bottom: 15px;
+    }
+
+    .callback-subtitle {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 40px;
+    }
+
+    .callback-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+
+      input {
+        width: 100%;
+        padding: 15px 20px;
+        border: 1px solid #d1d1d1;
+        border-radius: 4px;
+        font-size: 15px;
+        outline: none;
+        transition: border 0.3s;
+
+        &:focus {
+          border-color: rgba(85, 166, 48, 1);
+        }
+      }
+
+      button {
+        width: 100%;
+        padding: 16px;
+        background-color: rgba(85, 166, 48, 1);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.3s;
+
+        &:hover {
+          background-color: darken(rgba(85, 166, 48, 1), 5%);
+        }
+
+        &:disabled {
+          background-color: #ccc;
+        }
+      }
+    }
+
+    .status-msg {
+      margin-top: 20px;
+      font-weight: 500;
+      &.success { color: #55a630; }
+      &.error { color: #e74c3c; }
+    }
+  }
+
+  // --- MEDIA QUERIES ---
+  @media (max-width: 768px) {
+    padding: 40px 15px;
+
+    .callback-container {
+      padding: 40px 20px;
+      
+      .callback-title {
+        font-size: 24px;
+      }
+      
+      .callback-subtitle {
+        font-size: 14px;
+      }
+    }
+  }
+}

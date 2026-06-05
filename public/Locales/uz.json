@@ -124,6 +124,15 @@
   },
   "offers": {
     "title": "Maxsus takliflar"
+  },
+  "callback": {
+    "title": "Qayta qo'ng'iroqqa buyurtma bering",
+    "subtitle": "Formani to'ldiring va menejerimiz siz bilan bog'lanadi",
+    "namePlaceholder": "Ismingiz",
+    "phonePlaceholder": "Telefon raqamingiz",
+    "send": "Yuborish",
+    "success": "Xabar yuborildi!",
+    "error": "Xatolik yuz berdi."
   }
   
   
