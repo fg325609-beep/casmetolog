@@ -7,6 +7,8 @@ import Sectiontheare from './companents/Sectiontheare/Sectiontheare';
 import Sectionfoo from './companents/Sectionfoo/Sectionfoo';
 import MasterClasses from './companents/MasterClasses/MasterClasses';
 import WhyUs from './companents/WhyUs/WhyUs';
+import Aksiya from './companents/Aksiya/Aksiya';
+
 
 
 
@@ -27,6 +29,7 @@ const App = () => {
       <Sectionfoo/>
       <MasterClasses/>
       <WhyUs/>
+      <Aksiya/> 
     </div>
   );
 };
