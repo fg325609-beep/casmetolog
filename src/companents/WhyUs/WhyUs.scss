@@ -1,0 +1,111 @@
+.why-us {
+  padding: 80px 0;
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #333;
+  }
+
+  .why-us-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .why-card {
+    position: relative; // Raqamni joylash uchun shart
+    padding: 40px 30px;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    // Oq karta stili
+    &.white {
+      background: #ffffff;
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+      .bg-number { color: rgba(85, 166, 48, 0.2); } // Och yashil raqam
+    }
+
+    // Yashil karta stili (o'rtadagi)
+    &.green {
+      background: rgba(184, 232, 161, 1); // Figma dizayndagi och yashil fon
+      .bg-number { color: rgba(255, 255, 255, 0.4); } // Oqish raqam
+    }
+
+    .bg-number {
+      position: absolute;
+      bottom: -10px;
+      right: 10px;
+      font-size: 150px;
+      font-weight: 800;
+      line-height: 1;
+      pointer-events: none; // Matnni tanlashga xalaqit bermasligi uchun
+      z-index: 1;
+    }
+
+    .card-content {
+      position: relative;
+      z-index: 2; // Matn raqamning ustida turishi uchun
+    }
+
+    .card-title {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .card-text {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #444;
+      font-weight: 400;
+    }
+  }
+
+  // --- MEDIA QUERIES ---
+
+  @media (max-width: 1024px) {
+    .why-us-grid {
+      gap: 20px;
+    }
+    .why-card {
+      padding: 30px 20px;
+      .bg-number { font-size: 120px; }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 50px 0;
+    .section-title { font-size: 28px; margin-bottom: 40px; }
+    
+    .why-us-grid {
+      grid-template-columns: 1fr; // Mobilda ustunma-ustun turadi
+      gap: 25px;
+    }
+
+    .why-card {
+      min-height: auto;
+      padding: 40px 25px;
+    }
+  }
+}

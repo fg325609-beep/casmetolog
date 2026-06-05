@@ -88,5 +88,38 @@
     "subTitle": "We offer our services for models.",
     "description": "Choose a procedure or several procedures, and our manager will advise you and provide the closest date when you can receive this procedure.",
     "buttonText": "Become a model"
+  },
+  "masterClasses": {
+    "title": "Master Classes",
+    "subtitle": "Events for advanced training of cosmetologists",
+    "free": "Free",
+    "trainer": "Trainer",
+    "speakers": "Speakers",
+    "card1": {
+      "date": "November 3, 10:00-12:00",
+      "title": "10 capabilities of neodymium laser. Laser peeling, tattoo/permanent makeup removal",
+      "trainerName": "Yulia Shchukina",
+      "price": "2000 uah"
+    },
+    "card2": {
+      "date": "November 20, 12:00-17:00",
+      "title": "Cosmetologist profession. Seminar for beginners and professionals",
+      "speakersNames": "Marina Spivak, Alina Yadchishina, Elena Belogurova, Yulia Shchukina"
+    }
+  },
+  "whyUs": {
+    "title": "Why Us",
+    "card1": {
+      "title": "Teachers",
+      "text": "Our teachers have many years of experience in the field of cosmetology and combine teaching activities with practical work in beauty salons and other specialized centers."
+    },
+    "card2": {
+      "title": "Certificates",
+      "text": "The diploma, certificate, and testimonial obtained from us upon completion of the courses act as the best \"recommendation\" when applying for a job."
+    },
+    "card3": {
+      "title": "Advanced Training",
+      "text": "Every year, more than 2000 cosmetologists upgrade their qualifications and level of professionalism in the spacious rooms of our center."
+    }
   }
 }

@@ -5,6 +5,10 @@ import Sectionone from './companents/Sectionone/Sectionone';
 import About from './companents/About/About';
 import Sectiontheare from './companents/Sectiontheare/Sectiontheare';
 import Sectionfoo from './companents/Sectionfoo/Sectionfoo';
+import MasterClasses from './companents/MasterClasses/MasterClasses';
+import WhyUs from './companents/WhyUs/WhyUs';
+
+
 
 
 
@@ -21,6 +25,8 @@ const App = () => {
       <About/>
       <Sectiontheare/>
       <Sectionfoo/>
+      <MasterClasses/>
+      <WhyUs/>
     </div>
   );
 };

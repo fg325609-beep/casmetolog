@@ -88,6 +88,40 @@
     "subTitle": "Biz modellar uchun o'z xizmatlarimizni taklif etamiz.",
     "description": "Muolajani yoki bir nechta muolajalarni tanlang, menejerimiz sizga maslahat beradi va ushbu muolajani olishingiz mumkin bo'lgan eng yaqin sanani aytadi.",
     "buttonText": "Model bo'lish"
+  },
+  "masterClasses": {
+    "title": "Mahorat darslari",
+    "subtitle": "Kosmetologlar malakasini oshirish uchun tadbirlar",
+    "free": "Bepul",
+    "trainer": "Murabbiy",
+    "speakers": "Spikerlar",
+    "card1": {
+      "date": "3-noyabr, 10:00-12:00",
+      "title": "Neodimiy lazerining 10 ta imkoniyati. Lazerli piling, tatu/tatuajni o'chirish",
+      "trainerName": "Yuliya Shchukina",
+      "price": "2000 grn"
+    },
+    "card2": {
+      "date": "20-noyabr, 12:00-17:00",
+      "title": "Kosmetolog kasbi. Yangi boshlovchilar va professionallar uchun seminar",
+      "speakersNames": "Marina Spivak, Alina Yadchishina, Elena Belogurova, Yuliya Shchukina"
+    }
+  },
+  "whyUs": {
+    "title": "Nega biz",
+    "card1": {
+      "title": "O'qituvchilar",
+      "text": "Bizning o'qituvchilarimiz kosmetologiya sohasida ko'p yillik tajribaga ega va o'qituvchilik faoliyatini go'zallik salonlari hamda boshqa ixtisoslashtirilgan markazlardagi amaliy ishlar bilan birga olib boradilar."
+    },
+    "card2": {
+      "title": "Sertifikatlar",
+      "text": "Kurslarni tamomlagandan so'ng bizdan olingan guvohnoma va sertifikatlar ishga qabul qilishda eng yaxshi \"tavsiyanoma\" bo'lib xizmat qiladi."
+    },
+    "card3": {
+      "title": "Malaka oshirish",
+      "text": "Har yili 2000 dan ortiq kosmetologlar markazimizning keng xonalarida o'z malakalari va professionallik darajasini oshiradilar."
+    }
   }
+  
   
 }
