@@ -1,0 +1,132 @@
+.footer {
+  display: flex;
+  width: 100%;
+  min-height: 500px;
+  background-color: #3e3e3e; // Dizayndagi to'q kulrang
+  font-family: 'Montserrat', sans-serif;
+
+  .footer-left {
+    width: 50%;
+    height: auto;
+    iframe {
+      filter: grayscale(1); // Xaritani dizayndagidek bir oz kulrang qilish uchun (ixtiyoriy)
+    }
+  }
+
+  .footer-right {
+    width: 50%;
+    color: white;
+    padding: 60px 80px;
+    display: flex;
+    justify-content: flex-start;
+
+    .footer-content {
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .footer-logo {
+      width: 100px;
+      height: 100px;
+      background-color: #b8e8a1; // Dizayndagi yashil doira
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .contact-info {
+      margin-bottom: 40px;
+      .phone {
+        display: block;
+        font-size: 32px;
+        font-weight: 700;
+        color: white;
+        text-decoration: none;
+        margin-bottom: 10px;
+      }
+      .address {
+        font-size: 18px;
+        opacity: 0.9;
+      }
+    }
+
+    .links-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 40px;
+
+      .links-col {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        
+        a {
+          color: white;
+          text-decoration: none;
+          font-size: 16px;
+          opacity: 0.8;
+          transition: 0.3s;
+          &:hover { opacity: 1; }
+        }
+      }
+    }
+
+    .social-links {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 60px;
+      .social-icon {
+        color: white;
+        font-size: 24px;
+        transition: 0.3s;
+        &:hover { color: #b8e8a1; }
+      }
+    }
+
+    .footer-bottom {
+      .policy {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        opacity: 0.6;
+        &:hover { text-decoration: underline; }
+      }
+    }
+  }
+
+  // --- RESPONSIVE (MEDIA) ---
+  @media (max-width: 1024px) {
+    .footer-right {
+      padding: 40px;
+      .contact-info .phone { font-size: 26px; }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    
+    .footer-left {
+      width: 100%;
+      height: 300px;
+    }
+    
+    .footer-right {
+      width: 100%;
+      padding: 40px 20px;
+      .footer-content {
+        max-width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .links-grid { text-align: left; }
+    }
+  }
+}

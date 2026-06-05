@@ -133,6 +133,21 @@
     "send": "Отправить",
     "success": "Xabar yuborildi!",
     "error": "Xatolik yuz berdi."
+  },
+  "footer": {
+    "address": "Харьков, Клочковская, д. 3",
+    "links": {
+      "courses": "Курсы обучения",
+      "webinars": "Вебинары",
+      "videoLessons": "Видео-уроки",
+      "priceList": "Прайс",
+      "schedule": "Расписание",
+      "promotions": "Акции",
+      "aboutUs": "О нас",
+      "blog": "Блог",
+      "shop": "Магазин"
+    },
+    "policy": "Политика конфиденциальности"
   }
   
 }

@@ -133,5 +133,20 @@
     "send": "Send",
     "success": "Message sent successfully!",
     "error": "An error occurred."
+  },
+  "footer": {
+    "address": "Kharkiv, Klochkovskaya, 3",
+    "links": {
+      "courses": "Training Courses",
+      "webinars": "Webinars",
+      "videoLessons": "Video Lessons",
+      "priceList": "Price List",
+      "schedule": "Schedule",
+      "promotions": "Promotions",
+      "aboutUs": "About Us",
+      "blog": "Blog",
+      "shop": "Shop"
+    },
+    "policy": "Privacy Policy"
   }
 }

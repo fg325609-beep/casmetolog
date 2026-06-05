@@ -9,6 +9,8 @@ import MasterClasses from './companents/MasterClasses/MasterClasses';
 import WhyUs from './companents/WhyUs/WhyUs';
 import Aksiya from './companents/Aksiya/Aksiya';
 import CallbackForm from './companents/CallbackForm/CallbackForm';
+import Footer from './companents/Footer/Footer';
+
 
 
 
@@ -33,6 +35,7 @@ const App = () => {
       <WhyUs/>
       <Aksiya/>
       <CallbackForm/> 
+      <Footer/>
     </div>
   );
 };

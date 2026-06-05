@@ -133,6 +133,21 @@
     "send": "Yuborish",
     "success": "Xabar yuborildi!",
     "error": "Xatolik yuz berdi."
+  },
+  "footer": {
+    "address": "Xarkov, Klochkovskaya ko'chasi, 3-uy",
+    "links": {
+      "courses": "O'quv kurslari",
+      "webinars": "Vebinarlar",
+      "videoLessons": "Video-darslar",
+      "priceList": "Prays",
+      "schedule": "Jadval",
+      "promotions": "Aksiyalar",
+      "aboutUs": "Biz haqimizda",
+      "blog": "Blog",
+      "shop": "Do'kon"
+    },
+    "policy": "Maxfiylik siyosati"
   }
   
   
